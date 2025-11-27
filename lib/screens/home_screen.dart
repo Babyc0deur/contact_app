@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'm_supply_screen.dart';
-import 'request_form_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -50,20 +49,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const Spacer(),
               // Action Buttons
-              _HomeButton(
-                title: 'Faire une demande',
-                subtitle: 'Remplir le formulaire',
-                icon: Icons.edit_document,
-                color: Colors.blue,
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const RequestFormScreen(),
-                    ),
-                  );
-                },
-              ),
+
               const SizedBox(height: 20),
               _HomeButton(
                 title: 'Détails de synchronisation',
